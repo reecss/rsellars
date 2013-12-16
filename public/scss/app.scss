@@ -1,0 +1,12 @@
+// Note: import paths for Foundation and Bourbon are set in /public/config.rb
+
+// Foundation
+@import "settings";
+@import "foundation";
+
+// Bourbon
+@import "bourbon";
+
+// Main [MVCSS](http://mvcss.github.io/) structure
+@import "core/core";
+@import "modules/modules";

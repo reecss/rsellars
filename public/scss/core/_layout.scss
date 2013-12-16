@@ -1,0 +1,112 @@
+// Sidebar
+.sidebar {
+    @include transition(all 200ms ease-in-out);
+    @include grid-column(12);
+    position: fixed !important; // overwrite grid-column()'s position: relative
+    top: 0;
+    bottom: 0;
+    left: -100%;
+    border-right: 1px solid black;
+    background: #FFF;
+    width: 100%;
+    z-index: 1000;
+
+    @media #{$medium-up} {
+        left: 0;
+    }
+
+    @media #{$medium-only} {
+        @include grid-column(1);
+    }
+
+    @media #{$large-up} {
+        @include grid-column(2);
+    }
+
+    ul {
+        @include grid-column(12);
+        list-style: none;
+        margin-left: 0;
+    }
+
+    span {
+        @media #{$medium-only} {
+            display: none;
+
+            .sidebar--open & {
+                display: block;
+            }
+        }
+    }
+}
+
+.sidebar--open {
+    left: 0;
+
+    @media #{$medium-only} {
+        @include grid-column(5);
+    }
+
+    @media #{$small-only} {
+        html.csstransforms & {
+            @include transform(translateX(100%));
+            left: -100%;
+        }
+    }
+}
+
+.sidebar__portrait {
+    @include grid-column(12);
+    margin-top: 20px;
+    height: 50px;
+    background: blue;
+}
+
+.sidebar__icon {
+    display: none;
+
+    @media #{$medium-only} {
+        @include inline-block;
+
+        .sidebar--open & {
+            display: none;
+        }
+    }
+}
+
+.sidebar__toggle {
+    $toggle-btn-width: 15px;
+    @include position(absolute, 45% (0 - $toggle-btn-width) 0 0);
+    @include transition(opacity 1s ease-in-out);
+    width: $toggle-btn-width;
+    height: 20px;
+    border: 1px solid black;
+    visibility: visible;
+    opacity: 1;
+    z-index: 900;
+
+    @media #{$small-only} {
+        .sidebar--open & {
+            right: 0;
+        }
+    }
+
+    @media #{$large-up} {
+        visibility: hidden;
+        opacity: 0;
+    }
+}
+
+// Main content
+.page__content {
+    @include grid-column(12);
+
+    @media #{$medium-only} {
+        @include grid-column($columns: 11, $offset: 1);
+    }
+
+    @media #{$large-up} {
+        @include grid-column($columns: 10, $offset: 2);
+    }
+}
+

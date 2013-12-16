@@ -7764,18 +7764,14 @@ th.hide-for-touch {
   .sidebar span {
     display: none;
   }
-  /* line 36, ../scss/core/_layout.scss */
-  .sidebar--open .sidebar span {
-    display: block;
-  }
 }
 
-/* line 43, ../scss/core/_layout.scss */
+/* line 41, ../scss/core/_layout.scss */
 .sidebar--open {
   left: 0;
 }
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
-  /* line 43, ../scss/core/_layout.scss */
+  /* line 41, ../scss/core/_layout.scss */
   .sidebar--open {
     position: relative;
     padding-left: 0.9375rem;
@@ -7783,9 +7779,13 @@ th.hide-for-touch {
     width: 41.66667%;
     float: left;
   }
+  /* line 47, ../scss/core/_layout.scss */
+  .sidebar--open span {
+    display: block;
+  }
 }
 @media only screen and (max-width: 40em) {
-  /* line 51, ../scss/core/_layout.scss */
+  /* line 53, ../scss/core/_layout.scss */
   html.csstransforms .sidebar--open {
     -webkit-transform: translateX(100%);
     -moz-transform: translateX(100%);
@@ -7796,7 +7796,7 @@ th.hide-for-touch {
   }
 }
 
-/* line 58, ../scss/core/_layout.scss */
+/* line 60, ../scss/core/_layout.scss */
 .sidebar__portrait {
   position: relative;
   padding-left: 0.9375rem;
@@ -7808,12 +7808,12 @@ th.hide-for-touch {
   background: blue;
 }
 
-/* line 65, ../scss/core/_layout.scss */
+/* line 67, ../scss/core/_layout.scss */
 .sidebar__icon {
   display: none;
 }
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
-  /* line 65, ../scss/core/_layout.scss */
+  /* line 67, ../scss/core/_layout.scss */
   .sidebar__icon {
     display: inline-block;
     vertical-align: baseline;
@@ -7821,51 +7821,61 @@ th.hide-for-touch {
     *display: inline;
     *vertical-align: auto;
   }
-  /* line 71, ../scss/core/_layout.scss */
+  /* line 73, ../scss/core/_layout.scss */
   .sidebar--open .sidebar__icon {
     display: none;
   }
 }
 
-/* line 77, ../scss/core/_layout.scss */
+/* line 79, ../scss/core/_layout.scss */
 .sidebar__toggle {
   position: absolute;
   top: 45%;
-  right: -15px;
+  right: -10px;
   -webkit-transition: opacity 1s ease-in-out;
   -moz-transition: opacity 1s ease-in-out;
   transition: opacity 1s ease-in-out;
-  width: 15px;
+  width: 10px;
   height: 20px;
+  background: blue;
   border: 1px solid black;
   visibility: visible;
   opacity: 1;
   z-index: 900;
 }
+/* line 91, ../scss/core/_layout.scss */
+.sidebar--open .sidebar__toggle {
+  background: red;
+}
 @media only screen and (max-width: 40em) {
-  /* line 89, ../scss/core/_layout.scss */
+  /* line 96, ../scss/core/_layout.scss */
   .sidebar--open .sidebar__toggle {
     right: 0;
   }
 }
 @media only screen and (min-width: 64.063em) {
-  /* line 77, ../scss/core/_layout.scss */
+  /* line 79, ../scss/core/_layout.scss */
   .sidebar__toggle {
     visibility: hidden;
     opacity: 0;
   }
 }
 
-/* line 101, ../scss/core/_layout.scss */
+/* line 108, ../scss/core/_layout.scss */
 .page__content {
   position: relative;
   padding-left: 0.9375rem;
   padding-right: 0.9375rem;
   width: 100%;
   float: left;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
 }
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
-  /* line 101, ../scss/core/_layout.scss */
+  /* line 108, ../scss/core/_layout.scss */
   .page__content {
     position: relative;
     padding-left: 0.9375rem;
@@ -7876,7 +7886,7 @@ th.hide-for-touch {
   }
 }
 @media only screen and (min-width: 64.063em) {
-  /* line 101, ../scss/core/_layout.scss */
+  /* line 108, ../scss/core/_layout.scss */
   .page__content {
     position: relative;
     padding-left: 0.9375rem;

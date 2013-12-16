@@ -32,19 +32,21 @@
     span {
         @media #{$medium-only} {
             display: none;
-
-            .sidebar--open & {
-                display: block;
-            }
         }
     }
 }
 
+// Note: scrolling is still possible while mobile menu is open
+// also: doesn't display right on landscape mobiles
 .sidebar--open {
     left: 0;
 
     @media #{$medium-only} {
         @include grid-column(5);
+
+        span {
+            display: block;
+        }
     }
 
     @media #{$small-only} {
@@ -75,15 +77,20 @@
 }
 
 .sidebar__toggle {
-    $toggle-btn-width: 15px;
+    $toggle-btn-width: 10px;
     @include position(absolute, 45% (0 - $toggle-btn-width) 0 0);
     @include transition(opacity 1s ease-in-out);
     width: $toggle-btn-width;
     height: 20px;
+    background: blue;
     border: 1px solid black;
     visibility: visible;
     opacity: 1;
     z-index: 900;
+
+    .sidebar--open & {
+        background: red;
+    }
 
     @media #{$small-only} {
         .sidebar--open & {
@@ -100,6 +107,8 @@
 // Main content
 .page__content {
     @include grid-column(12);
+    // TranslateZ stops mobile menu flickering
+    @include transform(translateZ(0));
 
     @media #{$medium-only} {
         @include grid-column($columns: 11, $offset: 1);

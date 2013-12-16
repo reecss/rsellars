@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Laravel PHP Framework</title>
+    <title>Reece Sellars</title>
+    <meta name="viewport" content="initial-scale=1">
     <link rel="stylesheet" href="/css/app.css" type="text/css" />
     <script type="text/javascript" src="/js/modernizr-latest.js"></script>
 </head>
@@ -62,6 +63,36 @@
             I'm Reece.<br/>
             Welcome to my website.
         </h1>
+        <p>
+            My name is Reece and welcome to my website and Lorem tempora ipsa eligendi modi laudantium. Repudiandae nulla omnis pariatur pariatur vitae animi. Ut tenetur officia aliquid vel recusandae. Molestiae earum id exercitationem nobis similique. Aperiam laboriosam aperiam quas optio.
+        </p>
+        <p>
+            My name is Reece and welcome to my website and Lorem tempora ipsa eligendi modi laudantium. Repudiandae nulla omnis pariatur pariatur vitae animi. Ut tenetur officia aliquid vel recusandae. Molestiae earum id exercitationem nobis similique. Aperiam laboriosam aperiam quas optio.
+        </p>
+        <p>
+            My name is Reece and welcome to my website and Lorem tempora ipsa eligendi modi laudantium. Repudiandae nulla omnis pariatur pariatur vitae animi. Ut tenetur officia aliquid vel recusandae. Molestiae earum id exercitationem nobis similique. Aperiam laboriosam aperiam quas optio.
+        </p>
+        <p>
+            My name is Reece and welcome to my website and Lorem tempora ipsa eligendi modi laudantium. Repudiandae nulla omnis pariatur pariatur vitae animi. Ut tenetur officia aliquid vel recusandae. Molestiae earum id exercitationem nobis similique. Aperiam laboriosam aperiam quas optio.
+        </p>
+        <p>
+            My name is Reece and welcome to my website and Lorem tempora ipsa eligendi modi laudantium. Repudiandae nulla omnis pariatur pariatur vitae animi. Ut tenetur officia aliquid vel recusandae. Molestiae earum id exercitationem nobis similique. Aperiam laboriosam aperiam quas optio.
+        </p>
+        <p>
+            My name is Reece and welcome to my website and Lorem tempora ipsa eligendi modi laudantium. Repudiandae nulla omnis pariatur pariatur vitae animi. Ut tenetur officia aliquid vel recusandae. Molestiae earum id exercitationem nobis similique. Aperiam laboriosam aperiam quas optio.
+        </p>
+        <p>
+            My name is Reece and welcome to my website and Lorem tempora ipsa eligendi modi laudantium. Repudiandae nulla omnis pariatur pariatur vitae animi. Ut tenetur officia aliquid vel recusandae. Molestiae earum id exercitationem nobis similique. Aperiam laboriosam aperiam quas optio.
+        </p>
+        <p>
+            My name is Reece and welcome to my website and Lorem tempora ipsa eligendi modi laudantium. Repudiandae nulla omnis pariatur pariatur vitae animi. Ut tenetur officia aliquid vel recusandae. Molestiae earum id exercitationem nobis similique. Aperiam laboriosam aperiam quas optio.
+        </p>
+        <p>
+            My name is Reece and welcome to my website and Lorem tempora ipsa eligendi modi laudantium. Repudiandae nulla omnis pariatur pariatur vitae animi. Ut tenetur officia aliquid vel recusandae. Molestiae earum id exercitationem nobis similique. Aperiam laboriosam aperiam quas optio.
+        </p>
+        <p>
+            My name is Reece and welcome to my website and Lorem tempora ipsa eligendi modi laudantium. Repudiandae nulla omnis pariatur pariatur vitae animi. Ut tenetur officia aliquid vel recusandae. Molestiae earum id exercitationem nobis similique. Aperiam laboriosam aperiam quas optio.
+        </p>
         <p>
             My name is Reece and welcome to my website and Lorem tempora ipsa eligendi modi laudantium. Repudiandae nulla omnis pariatur pariatur vitae animi. Ut tenetur officia aliquid vel recusandae. Molestiae earum id exercitationem nobis similique. Aperiam laboriosam aperiam quas optio.
         </p>

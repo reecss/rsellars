@@ -13,6 +13,7 @@
             <p>Combination of front/back-end on Careers page - automatically hide expired jobs, automatically fill details/contact fields etc.</p>
             <p>Front- and back-end validation</p>
         </div>
+        <img class="content-section__right content--work__screenshot" src="http://placekitten.com/300/150" alt="">
     </section>
 
     <section class="content-section">
@@ -26,6 +27,7 @@
             <p>FAQs viewer - built myself</p>
             <p>Reviews page - all built with back-end integration by me</p>
         </div>
+        <img class="content-section__right content--work__screenshot" src="http://placekitten.com/300/150" alt="">
     </section>
 
     <section class="content-section">
@@ -35,6 +37,7 @@
             <p>Process page is the sex</p>
             <p>Controllable webcam using API</p>
         </div>
+        <img class="content-section__right content--work__screenshot" src="http://placekitten.com/300/150" alt="">
     </section>
 
     <section class="content-section">
@@ -45,6 +48,7 @@
             <p>External API integration for ID checks</p>
             <p>Custom built admin</p>
         </div>
+        <img class="content-section__right content--work__screenshot" src="http://placekitten.com/300/150" alt="">
     </section>
 
     <section class="content-section">
@@ -54,5 +58,6 @@
             <p>Data management/manipulation - head of the massive suitable house finding initiative. Responsible for collating and reporting on around 6000 records of suitable solar properties per week</p>
             <p>Upcoming auto install area check on ASG</p>
         </div>
+        <img class="content-section__right content--work__screenshot" src="http://placekitten.com/300/150" alt="">
     </section>
 @stop

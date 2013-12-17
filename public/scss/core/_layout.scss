@@ -1,30 +1,46 @@
 // Sidebar
+
+.sidebar ul,
+.sidebar__portrait,
+.page__content,
+.content-section,
+.content-section__left,
+.content-section__right {
+    @include grid-column($total-columns);
+}
+
+
 .sidebar {
     @include transition(all 200ms ease-in-out);
-    @include grid-column(12);
+    @include grid-column($sidebar-columns-small);
     position: fixed !important; // overwrite grid-column()'s position: relative
     top: 0;
     bottom: 0;
     left: -100%;
     border-right: 1px solid black;
     background: #FFF;
-    width: 100%;
     z-index: 1000;
+
+    @media #{$small-only} {
+        html.csstransforms & {
+            @include transform(translateX(-100%));
+            left: 0;
+        }
+    }
 
     @media #{$medium-up} {
         left: 0;
     }
 
     @media #{$medium-only} {
-        @include grid-column(1);
+        @include grid-column($sidebar-columns-medium);
     }
 
     @media #{$large-up} {
-        @include grid-column(2);
+        @include grid-column($sidebar-columns-largeup);
     }
 
     ul {
-        @include grid-column(12);
         list-style: none;
         margin-left: 0;
     }
@@ -36,13 +52,13 @@
     }
 }
 
-// Note: scrolling is still possible while mobile menu is open
+// Note: scrolling is still possible while mobile menu is open, shouldn't be
 // also: doesn't display right on landscape mobiles
 .sidebar--open {
     left: 0;
 
     @media #{$medium-only} {
-        @include grid-column(5);
+        @include grid-column($sidebar-columns-medium--open);
 
         span {
             display: block;
@@ -51,14 +67,12 @@
 
     @media #{$small-only} {
         html.csstransforms & {
-            @include transform(translateX(100%));
-            left: -100%;
+            @include transform(translateX(0));
         }
     }
 }
 
 .sidebar__portrait {
-    @include grid-column(12);
     margin-top: 20px;
     height: 50px;
     background: blue;
@@ -78,8 +92,10 @@
 
 .sidebar__toggle {
     $toggle-btn-width: 10px;
+
     @include position(absolute, 45% (0 - $toggle-btn-width) 0 0);
     @include transition(opacity 1s ease-in-out);
+    @include transform(translateX(0));
     width: $toggle-btn-width;
     height: 20px;
     background: blue;
@@ -96,6 +112,11 @@
         .sidebar--open & {
             right: 0;
         }
+
+        html.csstransforms .sidebar--open & {
+            @include transform(translateX(-100%));
+            right: 0 - $toggle-btn-width;
+        }
     }
 
     @media #{$large-up} {
@@ -106,16 +127,27 @@
 
 // Main content
 .page__content {
-    @include grid-column(12);
     // TranslateZ stops mobile menu flickering
     @include transform(translateZ(0));
 
     @media #{$medium-only} {
-        @include grid-column($columns: 11, $offset: 1);
+        @include grid-column($columns: $content-columns-medium, $offset: $sidebar-columns-medium);
     }
 
     @media #{$large-up} {
-        @include grid-column($columns: 10, $offset: 2);
+        @include grid-column($columns: $content-columns-largeup, $offset: $sidebar-columns-largeup);
     }
 }
 
+.content-section__left {
+    @media #{$medium-up} {
+        @include grid-column(7);
+    }
+}
+
+.content-section__right {
+    @media #{$medium-up} {
+        @include grid-column(4);
+        margin-top: 60px;
+    }
+}

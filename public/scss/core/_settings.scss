@@ -1,0 +1,8 @@
+$sidebar-columns-small: 12;
+$sidebar-columns-medium: 1;
+$sidebar-columns-medium--open: 5;
+$sidebar-columns-largeup: 2;
+
+$content-columns-small: 12;
+$content-columns-medium: $total-columns - $sidebar-columns-medium;
+$content-columns-largeup: $total-columns - $sidebar-columns-largeup;

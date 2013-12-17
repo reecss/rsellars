@@ -14,31 +14,31 @@
             </a>
         </li>
         <li>
-            <a href="/">
+            <a href="/plans">
                 <i class="sidebar__icon sidebar__icon--plans">P</i>
                 <span>Plans</span>
             </a>
         </li>
         <li>
-            <a href="/">
+            <a href="/contact">
                 <i class="sidebar__icon sidebar__icon--contact">C</i>
                 <span>Contact</span>
             </a>
         </li>
         <li>
-            <a href="/">
+            <a href="/employ">
                 <i class="sidebar__icon sidebar__icon--Employ">E</i>
                 <span>Employ</span>
             </a>
         </li>
         <li>
-            <a href="/">
+            <a href="/blog">
                 <i class="sidebar__icon sidebar__icon--Blog">B</i>
                 <span>Blog</span>
             </a>
         </li>
         <li>
-            <a href="/">
+            <a href="/playground">
                 <i class="sidebar__icon sidebar__icon--playground">P</i>
                 <span>Playground</span>
             </a>

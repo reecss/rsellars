@@ -1,5 +1,5 @@
 <meta charset="utf-8">
-<title>{{ $title }}</title>
+<title>Reece Sellars - {{ $title }}</title>
 <meta name="description" content="">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta name="viewport" content="initial-scale=1">

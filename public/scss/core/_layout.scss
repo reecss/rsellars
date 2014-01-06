@@ -1,14 +1,14 @@
 // Sidebar
 
-.sidebar ul,
+.sidebar nav,
 .sidebar__portrait,
 .page__content,
 .content-section,
 .content-section__left,
-.content-section__right {
+.content-section__right,
+.social-links {
     @include grid-column($total-columns);
 }
-
 
 .sidebar {
     @include transition(all 200ms ease-in-out);
@@ -136,6 +136,25 @@
 
     @media #{$large-up} {
         @include grid-column($columns: $content-columns-largeup, $offset: $sidebar-columns-largeup);
+    }
+}
+
+.content-section {
+    padding: {
+        top: 20px;
+        bottom: 20px;
+    }
+
+    &:first-child {
+        margin-top: 10px;
+        padding: {
+            top: 0;
+            bottom: 0;
+        }
+    }
+
+    &:last-child {
+        padding-bottom: 40px;
     }
 }
 

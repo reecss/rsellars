@@ -2,7 +2,10 @@
     <section class="content-section">
         <div class="content-section__left">
             <h1>My Work</h1>
-            <p>Over the last couple of years working at A Shade Greener I've worked on several websites doing both front- and back-end work.</p>
+            <p>
+                Over the last couple of years working at A Shade Greener I&#38;ve
+                worked on several websites doing both front- and back-end work.
+            </p>
             <p>
                 I started off working as a junior web developer and, with advice
                 and guidance from the lead developer at the time, improved my skills and
@@ -45,7 +48,7 @@
         <div class="content-section__left">
             <h2><a href="http://ashadegreener.co.uk/" target="_blank">A Shade Greener</a></h2>
             <p>
-                The main business venture of A Shade Greener Ltd. I'm responsible for maintaining and updating the website.
+                The main business venture of A Shade Greener Ltd. I&#38;m responsible for maintaining and updating the website.
                 If we have any new marketing ideas, changes to the application process or updates for the customer login system
                 I'm the man that makes them work.
             </p>
@@ -116,7 +119,7 @@
                 Front-end work on the website was mostly done by our junior
                 developer, with some contributions from myself and the back-end
                 was fully developed using Oject-Oriented PHP by myself with the <a href="http://www.slimframework.com/"
-                target="_blank">Slim</a> micro framework modified to work with
+                target="_blank">Slim</a> micro framework that I modified to work with
                 an <abbr title="Model-View-Controller">MVC</abbr> pattern.
             </p>
 
@@ -161,7 +164,7 @@
 
                 <dt>Custom built admin panel</dt>
                 <dd>
-                    Used to gain secure access to customers' application
+                    Used to gain secure access to customers&#38; application
                     details and verify/reject application.
                 </dd>
             </dl>

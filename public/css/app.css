@@ -5266,13 +5266,14 @@ th.hide-for-touch {
   display: table-cell !important;
 }
 
-/* line 8, ../scss/core/_layout.scss */
-.sidebar ul,
+/* line 9, ../scss/core/_layout.scss */
+.sidebar nav,
 .sidebar__portrait,
 .page__content,
 .content-section,
 .content-section__left,
-.content-section__right {
+.content-section__right,
+.social-links {
   position: relative;
   padding-left: 0.9375rem;
   padding-right: 0.9375rem;
@@ -5481,8 +5482,24 @@ th.hide-for-touch {
   }
 }
 
+/* line 142, ../scss/core/_layout.scss */
+.content-section {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+/* line 148, ../scss/core/_layout.scss */
+.content-section:first-child {
+  margin-top: 10px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+/* line 156, ../scss/core/_layout.scss */
+.content-section:last-child {
+  padding-bottom: 40px;
+}
+
 @media only screen and (min-width: 40.063em) {
-  /* line 142, ../scss/core/_layout.scss */
+  /* line 161, ../scss/core/_layout.scss */
   .content-section__left {
     position: relative;
     padding-left: 0.9375rem;
@@ -5493,7 +5510,7 @@ th.hide-for-touch {
 }
 
 @media only screen and (min-width: 40.063em) {
-  /* line 148, ../scss/core/_layout.scss */
+  /* line 167, ../scss/core/_layout.scss */
   .content-section__right {
     position: relative;
     padding-left: 0.9375rem;
@@ -5508,4 +5525,11 @@ th.hide-for-touch {
 .content--work__screenshot {
   border-radius: 5px;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* line 1, ../scss/modules/_social-links.scss */
+.social-links {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
 }

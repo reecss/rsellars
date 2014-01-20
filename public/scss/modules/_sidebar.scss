@@ -1,0 +1,63 @@
+// Note: scrolling is still possible while mobile menu is open, shouldn't be
+// also: doesn't display right on landscape mobiles
+.sidebar__portrait {
+    margin-top: 20px;
+    height: 50px;
+    background: blue;
+}
+
+.sidebar__icon {
+    display: none;
+
+    @media #{$medium-only} {
+        @include inline-block;
+
+        .sidebar--open & {
+            display: none;
+        }
+    }
+}
+
+.sidebar__toggle {
+    @include position(absolute, 45% 0px 0 0);
+    @include transition(opacity 1s ease-in-out);
+    @include transform(translateX(0));
+    width: $sidebar__toggle-width;
+    height: 50px;
+    background: blue;
+    border: 1px solid black;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 900;
+
+    .sidebar--open & {
+        background: red;
+    }
+
+    @media #{$medium-only} {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+
+.sidebar__nav {
+    ul {
+        padding-top: 15px;
+    }
+}
+
+// TODO: Move me. Also figure out why I'm not fading out on toggle
+.sidebar-mask {
+    @include position(fixed, 0px 0px 0px 0px);
+    @include transition(opacity $sidebar-toggle-duration ease-in-out);
+    background: #000;
+    z-index: 900;
+    visibility: hidden;
+    opacity: 0;
+
+    .sidebar--open + & {
+        visibility: visible;
+        opacity: 0.8;
+    }
+}

@@ -1,6 +1,6 @@
 // Sidebar
 
-.sidebar nav,
+.sidebar__nav,
 .sidebar__portrait,
 .page__content,
 .content-section,
@@ -10,8 +10,11 @@
     @include grid-column($total-columns);
 }
 
+// Core sidebar layout. Content styling is in the sidebar module
 .sidebar {
-    @include transition(all 200ms ease-in-out);
+    @include transition-property(width, transform, left);
+    @include transition-duration($sidebar-toggle-duration);
+    @include transition-timing-function(ease-in-out);
     @include grid-column($sidebar-columns-small);
     position: fixed !important; // overwrite grid-column()'s position: relative
     top: 0;
@@ -52,8 +55,6 @@
     }
 }
 
-// Note: scrolling is still possible while mobile menu is open, shouldn't be
-// also: doesn't display right on landscape mobiles
 .sidebar--open {
     left: 0;
 
@@ -66,62 +67,11 @@
     }
 
     @media #{$small-only} {
+        @include grid-column($sidebar-columns-small--open);
+
         html.csstransforms & {
             @include transform(translateX(0));
         }
-    }
-}
-
-.sidebar__portrait {
-    margin-top: 20px;
-    height: 50px;
-    background: blue;
-}
-
-.sidebar__icon {
-    display: none;
-
-    @media #{$medium-only} {
-        @include inline-block;
-
-        .sidebar--open & {
-            display: none;
-        }
-    }
-}
-
-.sidebar__toggle {
-    $toggle-btn-width: 10px;
-
-    @include position(absolute, 45% (0 - $toggle-btn-width) 0 0);
-    @include transition(opacity 1s ease-in-out);
-    @include transform(translateX(0));
-    width: $toggle-btn-width;
-    height: 20px;
-    background: blue;
-    border: 1px solid black;
-    visibility: visible;
-    opacity: 1;
-    z-index: 900;
-
-    .sidebar--open & {
-        background: red;
-    }
-
-    @media #{$small-only} {
-        .sidebar--open & {
-            right: 0;
-        }
-
-        html.csstransforms .sidebar--open & {
-            @include transform(translateX(-100%));
-            right: 0 - $toggle-btn-width;
-        }
-    }
-
-    @media #{$large-up} {
-        visibility: hidden;
-        opacity: 0;
     }
 }
 
@@ -129,6 +79,10 @@
 .page__content {
     // TranslateZ stops mobile menu flickering
     @include transform(translateZ(0));
+
+    @media #{$small-only} {
+        padding-top: $topbar-height;
+    }
 
     @media #{$medium-only} {
         @include grid-column($columns: $content-columns-medium, $offset: $sidebar-columns-medium);

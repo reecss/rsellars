@@ -1,0 +1,31 @@
+.topbar {
+    @include grid-column(12); 
+    @include position(fixed, 0px 0 0 0px);
+    @include transition-property(transform);
+    @include transition-duration(500ms);
+    @include transition-timing-function(ease-in-out);
+    @include transform(translateY(0));
+    background: blue;
+    height: $topbar-height;
+    z-index: 1000;
+    
+    @media #{$medium-up} {
+        visibility: hidden;
+        opacity: 0;
+        /*top: 0 - $topbar-height;*/
+        @include transform(translateY(-100%));
+    }
+}
+
+.topbar__toggle {
+    @include transition(left $sidebar-toggle-duration ease-in-out);
+    @include position(absolute, 0 0 0 ($column-gutter / 2)); // for transition
+    color: #FFF;
+    font-size: $topbar-height * 0.6;
+    line-height: $topbar-height;
+
+    .topbar--open & {
+        // Transition to full width - 1col
+        left: grid-calc(($content-columns-small - 1), $content-columns-small);
+    }
+}

@@ -11,6 +11,10 @@
 </head>
 
 <body @if (isset($body_class)) class="{{ $body_class }}" @endif>
+    @section('topbar')
+        @include('modules/topbar')
+    @show
+
     @section('sidebar')
         @include('modules/sidebar')
     @show

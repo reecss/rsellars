@@ -1,19 +1,19 @@
 .topbar {
     @include grid-column(12); 
+    @include linear-gradient(0deg, #4E4E4E 0%, #5C5C5C 50%, #4E4E4E 100%);
     @include position(fixed, 0px 0 0 0px);
     @include transition-property(transform);
     @include transition-duration(500ms);
     @include transition-timing-function(ease-in-out);
-    @include transform(translateY(0));
-    background: blue;
     height: $topbar-height;
+    box-shadow: 0 0 5px #000;
     z-index: 1000;
-    
+
     @media #{$medium-up} {
-        visibility: hidden;
+        @include transition-property(opacity, transform);
+        @include transform(translateY(-100%));
         opacity: 0;
         /*top: 0 - $topbar-height;*/
-        @include transform(translateY(-100%));
     }
 }
 

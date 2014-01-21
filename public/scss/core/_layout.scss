@@ -101,7 +101,7 @@
 
 .content-section__right {
     @media #{$medium-up} {
-        @include grid-column(4);
+        @include grid-column(5);
         margin-top: 60px;
     }
 }

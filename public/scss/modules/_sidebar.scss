@@ -11,6 +11,8 @@
     }
 
     span {
+        display: inline;
+
         @media #{$medium-only} {
             display: none;
         }
@@ -19,7 +21,7 @@
 
 .sidebar--open {
     span {
-        display: block;
+        display: inline;
     }
 }
 
@@ -30,13 +32,13 @@
 }
 
 .sidebar__icon {
-    display: none;
+    margin-right: 5px;
 
     @media #{$medium-only} {
         @include inline-block;
 
         .sidebar--open & {
-            display: none;
+            display: inline;
         }
     }
 }
@@ -63,10 +65,45 @@
     }
 }
 
-
 .sidebar__nav {
     ul {
         padding-top: 15px;
+    }
+
+    @media #{$medium-only} {
+        padding: 0;
+    }
+}
+
+.sidebar__icon {
+    font-family: 'icons';
+    font-style: normal;
+    font-size: 22px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.sidebar__icon--home {
+    &:before {
+        content: "\e600";
+    }
+}
+
+.sidebar__icon--work {
+    &:before {
+        content: "\e601";
+    }
+}
+
+.sidebar__icon--contact {
+    &:before {
+        content: "\e602";
+    }
+}
+
+.sidebar__icon--employ {
+    &:before {
+        content: "\e603";
     }
 }
 

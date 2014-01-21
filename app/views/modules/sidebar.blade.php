@@ -3,24 +3,24 @@
         <ul>
             <li>
                 <a href="/">
-                    <i class="sidebar__icon sidebar__icon--home">H</i>
+                    <i class="sidebar__icon sidebar__icon--home"></i>
                     <span>Home</span>
                 </a>
             </li>
             <li>
                 <a href="/work">
-                    <i class="sidebar__icon sidebar__icon--work">W</i>
+                    <i class="sidebar__icon sidebar__icon--work"></i>
                     <span>Work</span>
                 </a>
             </li>
                 <a href="/contact">
-                    <i class="sidebar__icon sidebar__icon--contact">C</i>
+                    <i class="sidebar__icon sidebar__icon--contact"></i>
                     <span>Contact</span>
                 </a>
             </li>
             <li>
                 <a href="https://github.com/reecss/CV" target="_blank">
-                    <i class="sidebar__icon sidebar__icon--employ">E</i>
+                    <i class="sidebar__icon sidebar__icon--employ"></i>
                     <span>Employ</span>
                 </a>
             </li>

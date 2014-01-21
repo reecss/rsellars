@@ -683,6 +683,14 @@ ul.off-canvas-list li a {
   left: 250px;
 }
 
+@font-face {
+  font-family: 'icons';
+  src: url("fonts/icons.eot");
+  src: url("fonts/icons.eot?#iefix") format("embedded-opentype"), url("fonts/icons.woff") format("woff"), url("fonts/icons.ttf") format("truetype"), url("fonts/icons.svg#icons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
 .sidebar__nav,
 .sidebar__portrait,
 .page__content,
@@ -842,7 +850,7 @@ ul.off-canvas-list li a {
     position: relative;
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
-    width: 33.33333%;
+    width: 41.66667%;
     float: left;
     margin-top: 60px;
   }
@@ -912,6 +920,9 @@ ul.off-canvas-list li a {
   list-style: none;
   margin-left: 0;
 }
+.sidebar span {
+  display: inline;
+}
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
   .sidebar span {
     display: none;
@@ -919,7 +930,7 @@ ul.off-canvas-list li a {
 }
 
 .sidebar--open span {
-  display: block;
+  display: inline;
 }
 
 .sidebar__portrait {
@@ -929,7 +940,7 @@ ul.off-canvas-list li a {
 }
 
 .sidebar__icon {
-  display: none;
+  margin-right: 5px;
 }
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
   .sidebar__icon {
@@ -940,7 +951,7 @@ ul.off-canvas-list li a {
     *vertical-align: auto;
   }
   .sidebar--open .sidebar__icon {
-    display: none;
+    display: inline;
   }
 }
 
@@ -976,6 +987,35 @@ ul.off-canvas-list li a {
 
 .sidebar__nav ul {
   padding-top: 15px;
+}
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  .sidebar__nav {
+    padding: 0;
+  }
+}
+
+.sidebar__icon {
+  font-family: 'icons';
+  font-style: normal;
+  font-size: 22px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.sidebar__icon--home:before {
+  content: "\e600";
+}
+
+.sidebar__icon--work:before {
+  content: "\e601";
+}
+
+.sidebar__icon--contact:before {
+  content: "\e602";
+}
+
+.sidebar__icon--employ:before {
+  content: "\e603";
 }
 
 .sidebar-mask {

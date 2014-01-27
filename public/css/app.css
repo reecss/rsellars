@@ -831,11 +831,20 @@ ul.off-canvas-list li a {
   padding-top: 0;
   padding-bottom: 0;
 }
-.content-section:last-child {
-  padding-bottom: 40px;
+@media only screen and (min-width: 64.063em) {
+  .content-section:last-child {
+    padding-bottom: 40px;
+  }
 }
 
-@media only screen and (min-width: 40.063em) {
+.content-section__left {
+  position: relative;
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
+  width: 100%;
+  float: left;
+}
+@media only screen and (min-width: 64.063em) {
   .content-section__left {
     position: relative;
     padding-left: 0.9375rem;
@@ -845,14 +854,17 @@ ul.off-canvas-list li a {
   }
 }
 
-@media only screen and (min-width: 40.063em) {
+.content-section__right {
+  display: none;
+}
+@media only screen and (min-width: 64.063em) {
   .content-section__right {
     position: relative;
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
     width: 41.66667%;
     float: left;
-    margin-top: 60px;
+    display: block;
   }
 }
 
@@ -969,14 +981,20 @@ ul.off-canvas-list li a {
   transform: translateX(0);
   width: 50px;
   height: 50px;
-  background: blue;
-  border: 1px solid black;
+  font-family: 'icons';
+  background-color: #EEE;
+  color: #B4B4B4;
+  font-size: 50px;
   visibility: hidden;
+  cursor: pointer;
   opacity: 0;
   z-index: 900;
 }
-.sidebar--open .sidebar__toggle {
-  background: red;
+.sidebar--open .sidebar__toggle:before {
+  content: "\e605";
+}
+.sidebar__toggle:before {
+  content: "\e604";
 }
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
   .sidebar__toggle {

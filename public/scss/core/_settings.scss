@@ -19,6 +19,12 @@ $content-columns-small: 12;
 $content-columns-medium: $total-columns - $sidebar-columns-medium;
 $content-columns-largeup: $total-columns - $sidebar-columns-largeup;
 
+$content__left-columns-medium: 12;
+$content__right-columns-medium: 0;
+$content__left-columns-largeup: 7;
+$content__right-columns-largeup: 5;
+
+
 $sidebar__toggle-width: 50px;
 $sidebar-toggle-duration: 200ms;
 $topbar-height: 40px;

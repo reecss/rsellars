@@ -49,14 +49,23 @@
     @include transform(translateX(0));
     width: $sidebar__toggle-width;
     height: 50px;
-    background: blue;
-    border: 1px solid black;
+    font-family: 'icons';
+    background-color: #EEE;
+    color: #B4B4B4;
+    font-size: 50px;
     visibility: hidden;
+    cursor: pointer;
     opacity: 0;
     z-index: 900;
 
     .sidebar--open & {
-        background: red;
+        &:before {
+            content: "\e605";
+        }
+    }
+
+    &:before {
+        content: "\e604";
     }
 
     @media #{$medium-only} {

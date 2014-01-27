@@ -88,20 +88,26 @@
         }
     }
 
-    &:last-child {
-        padding-bottom: 40px;
+    @media #{$large-up} {
+        &:last-child {
+            padding-bottom: 40px;
+        }
     }
 }
 
 .content-section__left {
-    @media #{$medium-up} {
-        @include grid-column(7);
+    @include grid-column($content__left-columns-medium);
+
+    @media #{$large-up} {
+        @include grid-column($content__left-columns-largeup);
     }
 }
 
 .content-section__right {
-    @media #{$medium-up} {
-        @include grid-column(5);
-        margin-top: 60px;
+    display: none;
+
+    @media #{$large-up} {
+        @include grid-column($content__right-columns-largeup);
+        display: block;
     }
 }

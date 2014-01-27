@@ -1,0 +1,10 @@
+@include keyframes(fadeIn) {
+    from {
+        @include transform(translateY(100%));
+        opacity: 0;
+    }
+    to {
+        @include transform(translateY(0%));
+        opacity: 1;
+    }
+}

@@ -1,0 +1,19 @@
+.welcome {
+    margin-top: 15%;
+    margin-left: 10%;
+}
+
+.welcome__line {
+    @include animation(fadeIn 1s);
+    @include animation-fill-mode(forwards);
+    display: inline-block;
+    width: 100%;
+    opacity: 0;
+}
+
+// Fade in each line individually
+@for $i from 1 through 3 {
+    .welcome__line:nth-child(#{$i}) {
+        @include animation-delay(700ms * $i);
+    }
+}

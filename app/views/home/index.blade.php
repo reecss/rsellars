@@ -1,40 +1,7 @@
 @section('content')
-    <h1>
-        Hi,<br/>
-        I'm Reece.<br/>
-        Welcome to my devsite.
+    <h1 class="welcome">
+        <span class="welcome__line">Hi,</span>
+        <span class="welcome__line">I'm Reece.</span>
+        <span class="welcome__line">Welcome to my little corner of the internet.</
     </h1>
-    <p>
-        My name is Reece and welcome to my website and Lorem tempora ipsa eligendi modi laudantium. Repudiandae nulla omnis pariatur pariatur vitae animi. Ut tenetur officia aliquid vel recusandae. Molestiae earum id exercitationem nobis similique. Aperiam laboriosam aperiam quas optio.
-    </p>
-    <p>
-        My name is Reece and welcome to my website and Lorem tempora ipsa eligendi modi laudantium. Repudiandae nulla omnis pariatur pariatur vitae animi. Ut tenetur officia aliquid vel recusandae. Molestiae earum id exercitationem nobis similique. Aperiam laboriosam aperiam quas optio.
-    </p>
-    <p>
-        My name is Reece and welcome to my website and Lorem tempora ipsa eligendi modi laudantium. Repudiandae nulla omnis pariatur pariatur vitae animi. Ut tenetur officia aliquid vel recusandae. Molestiae earum id exercitationem nobis similique. Aperiam laboriosam aperiam quas optio.
-    </p>
-    <p>
-        My name is Reece and welcome to my website and Lorem tempora ipsa eligendi modi laudantium. Repudiandae nulla omnis pariatur pariatur vitae animi. Ut tenetur officia aliquid vel recusandae. Molestiae earum id exercitationem nobis similique. Aperiam laboriosam aperiam quas optio.
-    </p>
-    <p>
-        My name is Reece and welcome to my website and Lorem tempora ipsa eligendi modi laudantium. Repudiandae nulla omnis pariatur pariatur vitae animi. Ut tenetur officia aliquid vel recusandae. Molestiae earum id exercitationem nobis similique. Aperiam laboriosam aperiam quas optio.
-    </p>
-    <p>
-        My name is Reece and welcome to my website and Lorem tempora ipsa eligendi modi laudantium. Repudiandae nulla omnis pariatur pariatur vitae animi. Ut tenetur officia aliquid vel recusandae. Molestiae earum id exercitationem nobis similique. Aperiam laboriosam aperiam quas optio.
-    </p>
-    <p>
-        My name is Reece and welcome to my website and Lorem tempora ipsa eligendi modi laudantium. Repudiandae nulla omnis pariatur pariatur vitae animi. Ut tenetur officia aliquid vel recusandae. Molestiae earum id exercitationem nobis similique. Aperiam laboriosam aperiam quas optio.
-    </p>
-    <p>
-        My name is Reece and welcome to my website and Lorem tempora ipsa eligendi modi laudantium. Repudiandae nulla omnis pariatur pariatur vitae animi. Ut tenetur officia aliquid vel recusandae. Molestiae earum id exercitationem nobis similique. Aperiam laboriosam aperiam quas optio.
-    </p>
-    <p>
-        My name is Reece and welcome to my website and Lorem tempora ipsa eligendi modi laudantium. Repudiandae nulla omnis pariatur pariatur vitae animi. Ut tenetur officia aliquid vel recusandae. Molestiae earum id exercitationem nobis similique. Aperiam laboriosam aperiam quas optio.
-    </p>
-    <p>
-        My name is Reece and welcome to my website and Lorem tempora ipsa eligendi modi laudantium. Repudiandae nulla omnis pariatur pariatur vitae animi. Ut tenetur officia aliquid vel recusandae. Molestiae earum id exercitationem nobis similique. Aperiam laboriosam aperiam quas optio.
-    </p>
-    <p>
-        My name is Reece and welcome to my website and Lorem tempora ipsa eligendi modi laudantium. Repudiandae nulla omnis pariatur pariatur vitae animi. Ut tenetur officia aliquid vel recusandae. Molestiae earum id exercitationem nobis similique. Aperiam laboriosam aperiam quas optio.
-    </p>
 @stop

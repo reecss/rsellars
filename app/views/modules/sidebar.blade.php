@@ -27,12 +27,6 @@
         </ul>
     </nav>
     <div class="sidebar__toggle"></div>
-
-    <ul class="social-links">
-        <li><a href="https://github.com/reecss" target="_blank">GitHub</a></li>
-        <li><a href="http://codepen.io/rsellars1" target="_blank">CodePen</a></li>
-        <li><a href="https://twitter.com/reecss" target="_blank">Twitter</a></li>
-    </ul>
 </div>
 
 <div class="sidebar-mask"></div>

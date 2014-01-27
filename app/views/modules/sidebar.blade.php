@@ -19,7 +19,7 @@
                 </a>
             </li>
             <li>
-                <a href="https://github.com/reecss/CV" target="_blank">
+                <a href="https://github.com/reecss/CV">
                     <i class="sidebar__icon sidebar__icon--employ"></i>
                     <span>Employ</span>
                 </a>

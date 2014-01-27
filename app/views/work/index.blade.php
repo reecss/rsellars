@@ -14,7 +14,7 @@
 
     <section class="content-section">
         <div class="content-section__left">
-            <h2>This Website!</h2>
+            <h2><a href="https://github.com/reecss/rsellars">This Website!</a></h2>
             <p>
                 Every developer should have a home on the web, so I built myself this site.
             </p>

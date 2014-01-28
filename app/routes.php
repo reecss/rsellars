@@ -15,3 +15,4 @@ Route::get('/', 'HomeController@index');
 
 Route::get('/work', 'WorkController@index');
 
+Route::get('/contact', 'ContactController@index');

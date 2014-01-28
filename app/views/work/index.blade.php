@@ -22,7 +22,7 @@
                 Using the <a href="http://laravel.com/" target="_blank">Laravel</a> PHP framework along with a combination of
                 <a href="http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/" target="_blank">BEM-style
                 CSS</a> and the <a href="http://foundation.zurb.com/" target="_blank">Foundation framework</a>, I made this site
-                as a way to showcase what I can do - and learn a few things along the way.
+                as a way to show a little of what I can do - and learn a few things along the way.
             </p>
             <p>The good stuff:</p>
             <dl>

@@ -1,7 +1,3 @@
 <script src="/bower_components/jquery/jquery.min.js" type="text/javascript"></script>
-<script>
-    $('.sidebar__toggle, .topbar__toggle, .sidebar-mask').click(function () {
-        $('.sidebar').toggleClass('sidebar--open');
-        $('.topbar').toggleClass('topbar--open');
-    });
-</script>
+<script src="/js/css3-mediaqueries.js" type="text/javascript"></script>
+<script src="/js/app.js" type="text/javascript"></script>

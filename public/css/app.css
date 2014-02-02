@@ -1156,17 +1156,20 @@ a {
     -webkit-transition-property: opacity, -webkit-transform;
     -moz-transition-property: opacity, -moz-transform;
     transition-property: opacity, transform;
+    top: -100%;
+    opacity: 0;
+  }
+  /* line 17, ../scss/modules/_topbar.scss */
+  html.csstransforms .topbar {
     -webkit-transform: translateY(-100%);
     -moz-transform: translateY(-100%);
     -ms-transform: translateY(-100%);
     -o-transform: translateY(-100%);
     transform: translateY(-100%);
-    opacity: 0;
-    /*top: 0 - $topbar-height;*/
   }
 }
 
-/* line 20, ../scss/modules/_topbar.scss */
+/* line 23, ../scss/modules/_topbar.scss */
 .topbar__toggle {
   -webkit-transition: left 200ms ease-in-out;
   -moz-transition: left 200ms ease-in-out;
@@ -1177,7 +1180,7 @@ a {
   font-size: 24px;
   line-height: 40px;
 }
-/* line 27, ../scss/modules/_topbar.scss */
+/* line 30, ../scss/modules/_topbar.scss */
 .topbar--open .topbar__toggle {
   left: 91.66667%;
 }

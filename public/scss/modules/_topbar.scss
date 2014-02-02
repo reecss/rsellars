@@ -11,9 +11,12 @@
 
     @media #{$medium-up} {
         @include transition-property(opacity, transform);
-        @include transform(translateY(-100%));
+        top: -100%;
         opacity: 0;
-        /*top: 0 - $topbar-height;*/
+
+        html.csstransforms & {
+            @include transform(translateY(-100%));
+        }
     }
 }
 

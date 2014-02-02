@@ -69,8 +69,18 @@
         @include grid-column($columns: $content-columns-medium, $offset: $sidebar-columns-medium);
     }
 
+    @media #{$medium-up} {
+        margin-top: 100px;
+    }
+
     @media #{$large-up} {
         @include grid-column($columns: $content-columns-largeup, $offset: $sidebar-columns-largeup);
+    }
+}
+
+.content--home {
+    @media #{$medium-up} {
+        margin-top: auto;
     }
 }
 
@@ -107,7 +117,7 @@
     display: none;
 
     @media #{$large-up} {
-        @include grid-column($content__right-columns-largeup);
+        @include grid-column($columns: $content__right-columns-largeup, $offset: 1);
         display: block;
     }
 }

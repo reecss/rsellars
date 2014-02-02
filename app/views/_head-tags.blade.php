@@ -7,7 +7,7 @@
 <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
 
 <!-- Prefetch DNS for external assets -->
-<link rel="dns-prefetch" href="//">
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
 
 <link rel="stylesheet" href="/css/app.css">
 @if (App::environment() === 'local')

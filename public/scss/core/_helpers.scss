@@ -1,3 +1,10 @@
+// Opacity with some support for older IEs
+@mixin opacity($opacity) {
+    opacity: $opacity;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=#{$opacity*100})";
+    filter: alpha(opacity=#{$opacity*100});
+}
+
 @include keyframes(fadeIn) {
     from {
         @include transform(translateY(100%));
@@ -8,3 +15,4 @@
         opacity: 1;
     }
 }
+

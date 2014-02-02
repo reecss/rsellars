@@ -10,5 +10,8 @@
 <link rel="dns-prefetch" href="//">
 
 <link rel="stylesheet" href="/css/app.css">
-<script type="text/javascript" src="/js/modernizr-latest.js"></script>
-
+@if (App::environment() === 'local')
+    <script type="text/javascript" src="/js/vendor/modernizr-latest.js"></script>
+@else
+    <script type="text/javascript" src="/js/vendor/modernizr-custom.js"></script>
+@endif

@@ -26,7 +26,7 @@ return array(
 	|
 	*/
 
-	'url' => 'http://rsellars.com',
+	'url' => 'http://staging.rsellars.com',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -176,3 +176,4 @@ return array(
 	),
 
 );
+

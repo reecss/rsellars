@@ -26,7 +26,10 @@ $app = new Illuminate\Foundation\Application;
 
 $env = $app->detectEnvironment(array(
 
-	'local' => array('your-machine-name'),
+	'local'      => array('Reeces-MacBook-Pro.local'),
+    'dev'        => array('dev.rsellars.com'),
+    'staging'    => array('staging.rsellars.com'),
+    'production' => array('rsellars.com')
 
 ));
 

@@ -50,6 +50,7 @@ module.exports = function (grunt) {
                 'cssDir': 'public/css',
                 'imagesDir': 'public/img',
                 'javascriptsDir': 'public/js',
+                'force': true,
                 'importPath': [
                     'public/bower_components/foundation/scss',
                     'public/bower_components/bourbon/app/assets/stylesheets',
@@ -68,7 +69,6 @@ module.exports = function (grunt) {
                 options: {
                     'outputStyle': 'compressed',
                     'noLineComments': true,
-                    'force': true
                 },
                 'src': 'public/scss/app.scss',
                 'dest': 'public/css/app.css'

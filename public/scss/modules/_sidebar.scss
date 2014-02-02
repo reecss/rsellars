@@ -1,34 +1,5 @@
-// Note: scrolling is still possible while mobile menu is open, shouldn't be
-// also: doesn't display right on landscape mobiles
 .sidebar {
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
-    border-right: 1px solid #A2A2A2;
     background: #FFF;
-
-    ul {
-        list-style: none;
-        margin-left: 0;
-    }
-
-    span {
-        display: inline;
-
-        @media #{$medium-only} {
-            display: none;
-        }
-    }
-}
-
-.sidebar--open {
-    span {
-        display: inline;
-    }
-}
-
-.sidebar__portrait {
-    margin-top: 20px;
-    height: 50px;
-    background: blue;
 }
 
 .sidebar__icon {
@@ -44,29 +15,18 @@
 }
 
 .sidebar__toggle {
-    @include position(absolute, 45% 0px 0 0);
+    @include position(absolute, 0 0 0px 0px);
     @include transition(opacity 1s ease-in-out);
     @include transform(translateX(0));
-    width: $sidebar__toggle-width;
+    width: 100%;
     height: 50px;
-    font-family: 'icons';
+    text-align: center;
     background-color: #EEE;
-    color: #B4B4B4;
     font-size: 50px;
     visibility: hidden;
     cursor: pointer;
     opacity: 0;
     z-index: 900;
-
-    .sidebar--open & {
-        &:before {
-            content: "\e605";
-        }
-    }
-
-    &:before {
-        content: "\e604";
-    }
 
     @media #{$medium-only} {
         visibility: visible;
@@ -74,13 +34,72 @@
     }
 }
 
+.sidebar__toggle__icon {
+    @include position(absolute, 0px 0 0 0px);
+    @include transition(opacity ($sidebar-toggle-duration * 0.75) ease-in-out);
+    color: #B4B4B4;
+    width: 100%;
+}
+
+.sidebar__toggle__icon--open {
+    opacity: 1;
+
+    .sidebar--open & {
+        opacity: 0;
+    }
+}
+
+.sidebar__toggle__icon--close {
+    opacity: 0;
+
+    .sidebar--open & {
+        opacity: 1;
+    }
+}
+
 .sidebar__nav {
     ul {
         padding-top: 15px;
+        list-style: none;
+        margin-left: 0;
+    }
+
+    li {
+        margin-bottom: 10px;
+
+        @media #{$medium-only} {
+            text-align: center;
+        }
+    }
+
+    span {
+        display: inline;
+
+        @media #{$medium-only} {
+            display: none;
+        }
     }
 
     @media #{$medium-only} {
-        padding: 0;
+        padding: 100px 0 0;
+    }
+
+    @media #{$large-up} {
+        margin-top: 100px;
+    }
+
+    .sidebar--open & {
+        li {
+            @media #{$medium-only} {
+                text-align: left;
+            }
+        }
+
+        span {
+            @media #{$medium-only} {
+                display: inline;
+            }
+        }
     }
 }
 

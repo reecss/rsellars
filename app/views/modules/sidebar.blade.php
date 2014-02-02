@@ -13,6 +13,7 @@
                     <span>Work</span>
                 </a>
             </li>
+            <li>
                 <a href="/contact">
                     <i class="sidebar__icon sidebar__icon--contact"></i>
                     <span>Contact</span>
@@ -26,7 +27,10 @@
             </li>
         </ul>
     </nav>
-    <div class="sidebar__toggle"></div>
+    <div class="sidebar__toggle">
+        <a class="sidebar__toggle__icon sidebar__toggle__icon--open" href="#">&raquo;</a>
+        <a class="sidebar__toggle__icon sidebar__toggle__icon--close" href="#">&laquo;</a>
+    </div>
 </div>
 
 <div class="sidebar-mask"></div>

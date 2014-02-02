@@ -13,5 +13,5 @@
 @if (App::environment() === 'local')
     <script type="text/javascript" src="/js/vendor/modernizr-latest.js"></script>
 @else
-    <script type="text/javascript" src="/js/vendor/modernizr-custom.js"></script>
+    <script type="text/javascript" src="/js/vendor/modernizr-custom.min.js"></script>
 @endif

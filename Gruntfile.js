@@ -2,6 +2,18 @@ module.exports = function (grunt) {
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
 
+        watch: {
+            scripts: {
+                files: ['public/js/*.js'],
+                tasks: ['jshint', 'uglify']
+            },
+
+            css: {
+                files: ['public/scss/app.scss'],
+                tasks: ['compass']
+            }
+        },
+
         jshint: {
             app: ['public/js/app.js']
         },
@@ -65,6 +77,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-compass');
     grunt.loadNpmTasks('grunt-modernizr');
+    grunt.loadNpmTasks('grunt-contrib-watch');
 
     grunt.registerTask('default', ['jshint', 'compass:dev']);
     grunt.registerTask('build', ['jshint', 'uglify', 'modernizr', 'compass:build']);

@@ -34,7 +34,7 @@ module.exports = function (grunt) {
                     {
                         expand: true,
                         cwd: 'public/js/vendor',
-                        src: '**/*.js',
+                        src: ['**/*.js', '!**/*.min.js'],
                         dest: 'public/js/vendor',
                         ext: '.min.js'
                     }
@@ -68,9 +68,10 @@ module.exports = function (grunt) {
                 options: {
                     'outputStyle': 'compressed',
                     'noLineComments': true,
+                    'force': true
                 },
                 'src': 'public/scss/app.scss',
-                'dest': 'public/css/app.css/'
+                'dest': 'public/css/app.css'
             }
         },
 

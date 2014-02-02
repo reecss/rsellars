@@ -1,4 +1,4 @@
-.sass-cache
+/.sass-cache
 public/.sass-cache
-
-node-modules
+/node-modules
+.DS_Store

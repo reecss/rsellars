@@ -78,6 +78,7 @@ module.exports = function (grunt) {
         modernizr: {
             'devFile': 'public/js/vendor/modernizr-latest.js',
             'outputFile': 'public/js/vendor/modernizr-custom.js',
+            'files': ['public/js/app.js'],
         }
     });
 

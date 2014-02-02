@@ -7,11 +7,11 @@
 <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
 
 <!-- Prefetch DNS for external assets -->
-<link rel="dns-prefetch" href="//">
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
 
 <link rel="stylesheet" href="/css/app.css">
 @if (App::environment() === 'local')
     <script type="text/javascript" src="/js/vendor/modernizr-latest.js"></script>
 @else
-    <script type="text/javascript" src="/js/vendor/modernizr-custom.js"></script>
+    <script type="text/javascript" src="/js/vendor/modernizr-custom.min.js"></script>
 @endif

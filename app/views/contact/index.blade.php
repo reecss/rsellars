@@ -5,7 +5,7 @@
         <ul>
             <li><a href="https://twitter.com/reecss">Sing me a birdsong</a></li>
             <li><a href="https://github.com/reecss">Fork me</a></li>
-            <li><a href="mailto:rsellars355@gmail.com">Or send me a regular ol&#39; email.</a></li>
+            <li><a href="mailto:hello@rsellars.com">Or send me a regular ol&#39; email.</a></li>
         </ul>
     </section>
 @stop

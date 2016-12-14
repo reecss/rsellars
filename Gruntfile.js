@@ -62,7 +62,7 @@ module.exports = function (grunt) {
                     'outputStyle': 'expanded',
                 },
                 'src': 'public/scss/app.scss',
-                'dest': 'public/css/app.css/'
+                'dest': 'public/css/app.css'
             },
 
             build: {

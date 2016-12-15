@@ -18,58 +18,12 @@
             <p>
                 Since then myself and few colleagues have founded an online
                 marketing &amp; lead generation company where I took up the
-                position of Head of Development. 
+                position of Head of Development.
             </p>
             <p>
                 Below is a selection of some of the websites I've worked on,
                 with highlights of their notable features.
             </p>
-        </div>
-    </section>
-
-    <section class="content-section">
-        <div class="content-section__left">
-            <h2><a href="https://github.com/reecss/rsellars">This Website!</a></h2>
-            <p>
-                Every developer should have a home on the web, so I built myself this site.
-            </p>
-            <p>
-                Using the <a href="http://laravel.com/" target="_blank">Laravel</a>
-                PHP framework along with a combination of
-                <a href="http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/"
-                    target="_blank">BEM-style CSS</a>
-                and the <a href="http://foundation.zurb.com/"
-                    target="_blank">Foundation framework</a>, I made this site
-                as a way to show a little of what I can do - and learn a few
-                things along the way.
-            </p>
-            <p>The good stuff:</p>
-            <dl>
-                <dt>
-                    Task automation with
-                    <a href="http://gruntjs.com/" target="_blank">Grunt</a>
-                </dt>
-                <dd>
-                    JS concatenation, SCSS processing, image optimisation. All
-                    done by grunt.
-                </dd>
-
-                <dt>Git</dt>
-                <dd>
-                    Used git throughout development of the site. Fully
-                    available on <a href="https://github.com/rsellars1/rsellars"
-                        target="_blank">GitHub</a>
-                </dd>
-
-                <dt>Fully responsive</dt>
-                <dd>
-                    Built with a mobile-first workflow which scales up to fit
-                    bigger displays
-                </dd>
-
-                <dt>One-step deployment</dt>
-                <dd>Set up my server for one-step build/deployment via git</dd>
-            </dl>
         </div>
     </section>
 

@@ -16,14 +16,106 @@
                 while advancing to the role of lead developer.
             </p>
             <p>
-                Since then myself and few colleagues have founded an online
-                marketing &amp; lead generation company where I took up the
-                position of Head of Development.
+                Since then I've been the Head of Development at an online
+                marketing &amp; lead generation company started by myself and
+                some colleagues, before moving onto a senior development
+                position at a Design &amp; Print Agency.
             </p>
             <p>
                 Below is a selection of some of the websites I've worked on,
                 with highlights of their notable features.
             </p>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="content-section__left">
+            <h2>Rethink Web2Print</h2>
+            <p>
+                I've weas responsible for a large amount of work on Rethink's
+                custom-built Web-to-print platform, which combines
+                e-commerce development with heavy use of an API created by
+                Xerox to interact with their FreeFlow Core platform to send
+                online print jobs directly to press.
+            </p>
+            <p>Features include:</p>
+            <dl>
+                <dt>E-commerce</dt>
+                <dd>
+                    WordPress &amp; WooCommerce used as a base for e-commerce
+                    features.
+                </dd>
+
+                <dt>FreeFlow Core API</dt>
+                <dd>
+                    Heavy use of Xerox's FreeFlow Core API to send artwork and
+                    print instructions directly to the press queue.
+                </dd>
+
+                <dt>Automatic Artwork Checks</dt>
+                <dd>
+                    Using a combination of ImageMagick and FreeFlow Core's API,
+                    artwork is passed through a 'pre-flight' check to analyse
+                    print compatibility, and provide feedback, as well as
+                    generating print-ready 'autocorrected' versions.
+                </dd>
+
+                <dt>JDF/JMF PHP Library</dt>
+                <dd>
+                    FreeFlow Core utilises the JDF/JMF XML format for
+                    interfacing with Rethink's press hardware. To make this an
+                    easier process, I created a basic PHP library to create
+                    files and handle sending/receiving of messages.
+                </dd>
+            </dl>
+        </div>
+        <div class="content-section__right">
+            <img class="content--work__screenshot"
+                src="/img/web2print-home_thumb.png"
+                alt="Rethink Media Website Homepage Screenshot">
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="content-section__left">
+            <h2>Rethink Media Website</h2>
+            <p>
+                I worked with the design team to rebuild the Rethink Media
+                website shortly after my arrival. The primary focus of the
+                redesign was to bring the website up to speed with a new look
+                and full cross-device responsiveness.
+            </p>
+            <p>
+                The website was built using the Slim PHP microframework and 
+                Zurb Foundation front-end framework for rapid development.
+            </p>
+            <p>Features include:</p>
+            <dl>
+                <dt>Updated backend</dt>
+                <dd>
+                    The website was updated to use the Slim PHP microframework
+                    for speed and better abstraction of functionality.
+                </dd>
+
+                <dt>Templating Engine Implemented</dt>
+                <dd>
+                    The Twig templating engine was also used, allowing reusable
+                    components to be created for easier updating of repeated
+                    elements.
+                </dd>
+
+                <dt>Mobile optimised</dt>
+                <dd>
+                    Fully responsive across devices, as well as loading
+                    differently sized images on appropriate devices for
+                    optimised speed, quality and data usage.
+                </dd>
+            </dl>
+        </div>
+        <div class="content-section__right">
+            <img class="content--work__screenshot"
+                src="/img/rethink-home_thumb.png"
+                alt="Rethink Media Website Homepage Screenshot">
         </div>
     </section>
 
@@ -71,34 +163,6 @@
             <img class="content--work__screenshot"
                 src="/img/asgm-crm-home_thumb.png"
                 alt="ASG Money CRM Homepage Screenshot">
-        </div>
-    </section>
-
-    <section class="content-section">
-        <div class="content-section__left">
-            <h2><a href="http://one-digital.co.uk" target="_blank">One Digital</a></h2>
-            <p>
-                One Digital's portfolio website. Focuses on a clean look,
-                high quality images and fast page loads using Google's
-                pagespeed module for critical path rendering.
-            </p>
-            <dl>
-                <dt>Dynamic images</dt>
-                <dd>
-                    Images on the British Ale Club are dynamically loaded to
-                    fit responsive layout using Foundation's Interchange
-                    plugin.
-                </dd>
-
-                <dt>Retina Images</dt>
-                <dd>
-                    Retina images are loaded using HTML5's srcset attribute.
-                </dd>
-            </dl>
-        </div>
-        <div class="content-section__right">
-            <img class="content--work__screenshot" src="/img/oned-home_thumb.png"
-                alt="One Digital Website Homepage">
         </div>
     </section>
 
